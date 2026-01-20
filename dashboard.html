@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | GAURAV AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="protected">
+  <header class="container">
+    <nav class="navbar">
+      <a class="logo" href="index.html">GAURAV AI</a>
+      <div class="nav-links">
+        <span id="user-email">loading...</span>
+        <button class="btn btn-outline" id="logout-btn">Logout</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container dashboard">
+    <div class="glass-card">
+      <h2>Welcome to GAURAV AI</h2>
+      <p class="welcome">Your AI learning dashboard is ready. Choose a premium program to start.</p>
+      <div class="course-grid">
+        <div class="glass-card course-card">
+          <h3>AI Foundation Program</h3>
+          <p>Build core AI fundamentals with guided projects and assessments.</p>
+          <div class="course-price">₹1000</div>
+          <a class="btn btn-primary" href="payment.html">Buy / Enroll</a>
+        </div>
+        <div class="glass-card course-card">
+          <h3>Advanced AI Skills</h3>
+          <p>Deep dive into applied ML, generative AI, and real-world deployments.</p>
+          <div class="course-price">₹1500</div>
+          <a class="btn btn-primary" href="payment.html">Buy / Enroll</a>
+        </div>
+        <div class="glass-card course-card">
+          <h3>AI Pro Mastery</h3>
+          <p>Become industry-ready with capstone projects and expert mentorship.</p>
+          <div class="course-price">₹2000</div>
+          <a class="btn btn-primary" href="payment.html">Buy / Enroll</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="loading-overlay" id="loading">
+    <div class="spinner"></div>
+  </div>
+  <div class="toast-container" id="toast-container"></div>
+
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>
