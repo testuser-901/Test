@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | GAURAV AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="auth">
+  <header class="container">
+    <nav class="navbar">
+      <a class="logo" href="index.html">GAURAV AI</a>
+      <div class="nav-links">
+        <a href="signup.html" class="btn btn-outline">Create Account</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container auth-wrapper">
+    <div class="glass-card auth-card">
+      <h2>Welcome back</h2>
+      <p>Login to continue your AI learning journey.</p>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" name="password" minlength="6" placeholder="Minimum 6 characters" required />
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+      </form>
+      <p style="margin-top: 16px;">
+        New here? <a class="helper-link" href="signup.html">Create an account</a>
+      </p>
+    </div>
+  </main>
+
+  <div class="loading-overlay" id="loading">
+    <div class="spinner"></div>
+  </div>
+  <div class="toast-container" id="toast-container"></div>
+
+  <script type="module" src="auth.js"></script>
+</body>
+</html>
